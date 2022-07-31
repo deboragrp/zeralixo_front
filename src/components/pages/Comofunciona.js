@@ -9,7 +9,6 @@ function Comofunciona() {
       <br />
       <h1>TAMO NO COMO FUNCIONA!!</h1>
       <br />
-      <Footer />
     </div>
   );
 }

@@ -9,7 +9,6 @@ function Estag_cad() {
       <br />
       <h1>TAMO NOS ESAGIOS DO CADASTRO!!</h1>
       <br />
-      <Footer />
     </div>
   );
 }

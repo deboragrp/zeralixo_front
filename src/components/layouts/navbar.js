@@ -1,9 +1,11 @@
 import React from "react";
 import logo from "../../logo.svg";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  let navigate = useNavigate();
   return (
-    <nav className="navbar navbar-expand-lg bg-dark">
+    <nav className="navbar navbar-expand-lg bg-dark ">
       <div className="container-fluid">
         <a className="navbar-brand ms-5 " href="#">
           <img src={logo} alt="logo" style={{ width: "60px" }} />
@@ -60,17 +62,15 @@ function Navbar() {
           </ul>
           <button
             className="btn btn-outline-light me-1"
-            href="#"
-            role="button"
-            type="submit"
+            onClick={() => navigate("/cadastro")}
+            aria-current="page"
           >
             Cadastre-se
           </button>
           <button
             className="btn btn-success me-5"
-            href="#"
-            role="button"
-            type="submit"
+            onClick={() => navigate("/login")}
+            aria-current="page"
           >
             Login
           </button>

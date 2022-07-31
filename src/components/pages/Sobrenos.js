@@ -9,7 +9,6 @@ function Sobrenos() {
       <br />
       <h1>TAMO NO SOBRENOS!!</h1>
       <br />
-      <Footer />
     </div>
   );
 }

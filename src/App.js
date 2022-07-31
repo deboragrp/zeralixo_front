@@ -1,6 +1,7 @@
 import React, { element } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap";
 import Navbar from "./components/layouts/navbar";
 import Footer from "./components/layouts/Footer";
 // React Router Import

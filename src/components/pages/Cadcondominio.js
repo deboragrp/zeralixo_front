@@ -9,7 +9,6 @@ function Cadcondominio() {
       <br />
       <h1>TAMO NO CADASTRO DO CONDOMINIO!!</h1>
       <br />
-      <Footer />
     </div>
   );
 }

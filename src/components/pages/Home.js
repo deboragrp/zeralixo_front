@@ -9,7 +9,6 @@ function Home() {
       <br />
       <h1>TAMO NA HOME!!</h1>
       <br />
-      <Footer />
     </div>
   );
 }

@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="main-footer">
-      <div className="footer-middle bg-dark pt-3 pb-2 text-light">
+    <footer className="footer mb-0 ms-0 ">
+      <div className="bg-dark pt-3 pb-2 text-light">
         <div className="container">
           <div className="row"></div>
           {/*Footer BOTTOM */}
@@ -13,7 +13,7 @@ function Footer() {
           </p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 export default Footer;

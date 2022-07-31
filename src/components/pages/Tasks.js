@@ -9,7 +9,6 @@ function Tasks() {
       <br />
       <h1>TAMO NAS TASKS!!</h1>
       <br />
-      <Footer />
     </div>
   );
 }

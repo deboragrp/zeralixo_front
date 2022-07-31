@@ -9,7 +9,6 @@ function Contato() {
       <br />
       <h1>TAMO NO CONTATO!!</h1>
       <br />
-      <Footer />
     </div>
   );
 }

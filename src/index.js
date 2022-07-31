@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createPortal } from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Footer from "./components/layouts/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <>
     <App />
-  </React.StrictMode>
+    {createPortal(<Footer />, document.getElementById("footer"))}
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -9,7 +9,6 @@ function Trocapts() {
       <br />
       <h1>TAMO NA TROCA DE PONTOS!!</h1>
       <br />
-      <Footer />
     </div>
   );
 }

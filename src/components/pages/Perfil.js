@@ -9,7 +9,6 @@ function Perfil() {
       <br />
       <h1>TAMO NO PERFIL DO USUARIO!!</h1>
       <br />
-      <Footer />
     </div>
   );
 }
