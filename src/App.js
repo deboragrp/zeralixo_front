@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { element } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/layouts/navbar";
+import Footer from "./components/layouts/Footer";
+// React Router Import
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+//Import Pages
+import Home from "./components/pages/Home";
+import Sobrenos from "./components/pages/Sobrenos";
+import Contato from "./components/pages/Contato";
+import Comofunciona from "./components/pages/Comofunciona";
+import Cadcondominio from "./components/pages/Cadcondominio";
+import Estag_cad from "./components/pages/Estag_cad";
+import Cadastro from "./components/pages/Cadastro";
+import Login from "./components/pages/Login";
+import Perfil from "./components/pages/Perfil";
+import Tasks from "./components/pages/Tasks";
+import Trocapts from "./components/pages/Trocapts";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobrenos" element={<Sobrenos />} />
+          <Route path="/contato" element={<Contato />} />
+          <Route path="/comofunciona" element={<Comofunciona />} />
+          <Route path="/cadcondominio" element={<Cadcondominio />} />
+          <Route path="/estagiodocad" element={<Estag_cad />} />
+          <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/perfil" element={<Perfil />} />
+          <Route path="/tasks" element={<Tasks />} />
+          <Route path="/trocadepts" element={<Trocapts />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
