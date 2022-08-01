@@ -1,9 +1,10 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 import Navbar from "../layouts/navbar";
 import Footer from "../layouts/Footer";
 
 function Login() {
+  let navigate = useNavigate();
   return (
     <div>
       <Navbar />
@@ -39,7 +40,11 @@ function Login() {
           </div>
         </div>
         <div className="d-grid">
-          <button type="submit" className="btn btn-success">
+          <button
+            onClick={() => navigate("/perfil")}
+            type="submit"
+            className="btn btn-success"
+          >
             Entrar
           </button>
         </div>

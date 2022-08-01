@@ -25,7 +25,7 @@ function Sobrenos() {
       <Container>
         <div>
           <div className="justify-content-center pt-5">
-            <h2 class="pb-2 border-bottom">
+            <h2 class="pb-2 border-bottom fw-bold text-success">
               Porque ter o ZeraLixo no seu condomínio?
             </h2>
 
@@ -45,10 +45,24 @@ function Sobrenos() {
                 </Col>
 
                 <Col className="d-flex justify-content-end pt-3">
-                  <Card className="ms-5 shadow" style={{ width: "18.5rem" }}>
+                  <Card
+                    className="ms-5 "
+                    style={{
+                      width: "18.5rem",
+                      boxShadow:
+                        "0 4px 8px 0 rgba(97, 233, 93, 0.8), 0 6px 20px 0 rgba(97, 233, 93, 0.8)",
+                    }}
+                  >
                     <Card.Img variant="top" src={Img1} />
                   </Card>
-                  <Card className="ms-5 shadow" style={{ width: "14.06rem" }}>
+                  <Card
+                    className="ms-5 "
+                    style={{
+                      width: "14.06rem",
+                      boxShadow:
+                        "0 4px 8px 0 rgba(97, 233, 93, 0.8), 0 6px 20px 0 rgba(97, 233, 93, 0.8)",
+                    }}
+                  >
                     <Card.Img variant="top" src={Img3} />
                     <Card.Img variant="bottom" src={Img4} />
                   </Card>
@@ -59,7 +73,9 @@ function Sobrenos() {
 
           <Row>
             <div class="container px-4 py-5" id="icon-grid">
-              <h2 class="pb-2 border-bottom">Features do ZeraLixo</h2>
+              <h2 class="pb-2 border-bottom fw-bold text-success">
+                Features do ZeraLixo
+              </h2>
 
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
                 <div class="col d-flex align-items-start">
@@ -148,11 +164,19 @@ function Sobrenos() {
           </Row>
           <div>
             <div className="justify-content-center pt-5">
-              <h2 class="pb-2 border-bottom">Team ZeraLixo</h2>
+              <h2 class="pb-2 border-bottom text-success fw-bold">
+                Team ZeraLixo
+              </h2>
 
               <Row>
                 <Col className="d-flex  pt-3 pb-5">
-                  <Card style={{ width: "15rem" }}>
+                  <Card
+                    style={{
+                      width: "15rem",
+                      boxShadow:
+                        "0 4px 8px 0 rgba(97, 233, 93, 0.8), 0 6px 20px 0 rgba(97, 233, 93, 0.8)",
+                    }}
+                  >
                     <Card.Img variant="top" src={Deboraimg} />
                     <Card.Body>
                       <Card.Title>Débora Pinto</Card.Title>
@@ -174,7 +198,14 @@ function Sobrenos() {
                       </a>
                     </Card.Body>
                   </Card>
-                  <Card className="ms-2" style={{ width: "15rem" }}>
+                  <Card
+                    className="ms-2 "
+                    style={{
+                      width: "15rem",
+                      boxShadow:
+                        "0 4px 8px 0 rgba(97, 233, 93, 0.8), 0 6px 20px 0 rgba(97, 233, 93, 0.8)",
+                    }}
+                  >
                     <Card.Img variant="top" src={Mayara} />
                     <Card.Body>
                       <Card.Title>Mayara Ribeiro</Card.Title>
@@ -199,7 +230,14 @@ function Sobrenos() {
                       </a>
                     </Card.Body>
                   </Card>
-                  <Card className="ms-2" style={{ width: "15rem" }}>
+                  <Card
+                    className="ms-2"
+                    style={{
+                      width: "15rem",
+                      boxShadow:
+                        "0 4px 8px 0 rgba(97, 233, 93, 0.8), 0 6px 20px 0 rgba(97, 233, 93, 0.8)",
+                    }}
+                  >
                     <Card.Img variant="top" src={Hugoimg} />
                     <Card.Body>
                       <Card.Title>Hugo França</Card.Title>
@@ -224,7 +262,14 @@ function Sobrenos() {
                       </a>
                     </Card.Body>
                   </Card>
-                  <Card className="ms-2" style={{ width: "15rem" }}>
+                  <Card
+                    className="ms-2"
+                    style={{
+                      width: "15rem",
+                      boxShadow:
+                        "0 4px 8px 0 rgba(97, 233, 93, 0.8), 0 6px 20px 0 rgba(97, 233, 93, 0.8)",
+                    }}
+                  >
                     <Card.Img variant="top" src={Giullyimg} />
                     <Card.Body>
                       <Card.Title>Giully Domingos</Card.Title>
@@ -249,7 +294,14 @@ function Sobrenos() {
                       </a>
                     </Card.Body>
                   </Card>
-                  <Card className="ms-2" style={{ width: "15rem" }}>
+                  <Card
+                    className="ms-2  "
+                    style={{
+                      width: "15rem",
+                      boxShadow:
+                        "0 4px 8px 0 rgba(97, 233, 93, 0.8), 0 6px 20px 0 rgba(97, 233, 93, 0.8)",
+                    }}
+                  >
                     <Card.Img variant="top" src={Deyseimg} />
                     <Card.Body>
                       <Card.Title>Deysiane</Card.Title>
