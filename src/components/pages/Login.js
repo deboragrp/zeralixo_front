@@ -44,7 +44,7 @@ function Login() {
           </button>
         </div>
         <p className="forgot-password text-right">
-          Esqueceu a <a href="#">senha?</a>
+          Esqueceu a <a href="/esqueciminhasenha">senha?</a>
         </p>
       </form>
     </div>

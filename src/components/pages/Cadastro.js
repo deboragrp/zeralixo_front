@@ -1,133 +1,121 @@
 import React from "react";
 import Navbar from "../layouts/navbar";
-import Footer from "../layouts/Footer";
+import Col from "react-bootstrap/Col";
+import Form from "react-bootstrap/Form";
+import Row from "react-bootstrap/Row";
 
 function Cadastro() {
   return (
     <div>
       <Navbar />
-      <form className="form-signin w-50 mt-5  m-auto">
-        <h3 className="text-center">Cadastre-se</h3>
-        <div className="row">
-          <div className="mb-3 col">
-            <label>Nome completo</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Nome completo"
-            />
-          </div>
+      <form className="form-signin w-50 mt-5  m-auto pt-5 pb-5">
+        <h3 className=" mb-3 text-center">Cadastre-se</h3>
+        <Row className="mb-3">
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Nome Completo</Form.Label>
+            <Form.Control type="text" placeholder="Nome completo" />
+          </Form.Group>
 
-          <div className="mb-3 col">
-            <label>Email</label>
-            <input type="email" className="form-control" placeholder="Email" />
-          </div>
-        </div>
-        <div className="row">
-          <div className="mb-3 col">
-            <label>CPF</label>
-            <input
-              type="text"
-              name="cpf"
-              className="form-control"
-              pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
-              placeholder="CPF"
-            />
-          </div>
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>Email</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" />
+          </Form.Group>
+        </Row>
 
-          <div className="mb-3 col">
-            <label>Data de nascimento</label>
-            <input type="date" className="form-control" />
-          </div>
-        </div>
-        <div className="row">
-          <div className="mb-3 col">
-            <label>Senha</label>
-            <input
-              type="password"
-              className="form-control"
-              placeholder="ID do seu condomínio"
-            />
-          </div>
-          <div className="mb-3 col">
-            <label>Confirmar senha</label>
-            <input
-              type="password"
-              className="form-control"
-              placeholder="ID do seu condomínio"
-            />
-          </div>
-          <div className="mb-3 col">
-            <label>Função</label>
-            <select id="inputState" class="form-select">
-              <option selected>Escolha...</option>
+        <Row className="mb-3">
+          <Form.Group as={Col}>
+            <Form.Label>Senha</Form.Label>
+            <Form.Control type="password" placeholder="ID do seu condomínio" />
+          </Form.Group>
+
+          <Form.Group as={Col} controlId="formGridState">
+            <Form.Label>Função</Form.Label>
+            <Form.Select defaultValue="Escolha...">
+              <option>Escolha...</option>
               <option>Regar</option>
               <option>Colher</option>
               <option>Limpar</option>
               <option>Plantar</option>
-            </select>
-          </div>
-        </div>
-        <div className="row">
-          <div className="mb-3 col">
-            <label>Andar</label>
-            <input
-              type="number"
-              className="form-control"
-              placeholder="Digite seu andar"
-            />
-          </div>
+            </Form.Select>
+          </Form.Group>
+        </Row>
+        <Row className="mb-3">
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Seu andar</Form.Label>
+            <Form.Control type="number" placeholder="Escolha seu andar" />
+          </Form.Group>
 
-          <div className="mb-3 col">
-            <label>Nº do apt</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Número do seu Apê"
-            />
-          </div>
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>Nº do apt</Form.Label>
+            <Form.Control type="number" placeholder="Número do seu apt" />
+          </Form.Group>
 
-          <div class="mb-3 col">
-            <label>CEP</label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="CEP"
-              aria-label="Zip"
+          <Form.Group as={Col} controlId="formGridZip">
+            <Form.Label>CEP</Form.Label>
+            <Form.Control placeholder="CEP" />
+          </Form.Group>
+        </Row>
+        <Form.Group className="mb-3" controlId="formGridAddress1">
+          <Form.Label>Endereço</Form.Label>
+          <Form.Control placeholder="Endereço" />
+        </Form.Group>
+        <Row className="mb-3">
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Bairro</Form.Label>
+            <Form.Control
+              type="district"
+              id="bairro"
+              name="bairro"
+              placeholder="Bairro"
             />
-          </div>
-        </div>
-        <div className="row">
-          <div class="mb-3 col">
-            <label>Bairro</label>
-            <input type="email" className="form-control" placeholder="Email" />
-          </div>
-          <div class="mb-3 col">
-            <label>Cidade</label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Cidade"
-              aria-label="City"
-            />
-          </div>
-          <div class="mb-3 col">
-            <label>Estado</label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Estado"
-              aria-label="State"
-            />
-          </div>
-        </div>
-        <div className="d-grid">
-          <button type="submit" className="btn btn-success mt-3">
+          </Form.Group>
+
+          <Form.Group as={Col} controlId="formGridCity">
+            <Form.Label>Cidade</Form.Label>
+            <Form.Control placeholder="Cidade" />
+          </Form.Group>
+
+          <Form.Group as={Col} controlId="formGridState">
+            <Form.Label>Estado</Form.Label>
+            <Form.Select defaultValue="Escolha">
+              <option>Escolha...</option>
+              <option>Acre</option>
+              <option>Alagoas</option>
+              <option>Amapá</option>
+              <option>Amazonas</option>
+              <option>Bahia</option>
+              <option>Ceará</option>
+              <option>Espírito Santo</option>
+              <option>Goiás</option>
+              <option>Maranhão</option>
+              <option>Mato Grosso</option>
+              <option>Mato Grosso do Sul</option>
+              <option>Minas Gerais</option>
+              <option>Pará</option>
+              <option>Paraiba</option>
+              <option>Pernambuco</option>
+              <option>Piauí</option>
+              <option>Rio de Janeiro</option>
+              <option>Rio Grande do Norte</option>
+              <option>Rio Grande do Sul</option>
+              <option>Rondônia</option>
+              <option>Roraima</option>
+              <option>Santa Catarina</option>
+              <option>São Paulo</option>
+              <option>Sergipe</option>
+              <option>Tocantins</option>
+              <option>Distrito Federal</option>
+            </Form.Select>
+          </Form.Group>
+        </Row>
+
+        <div className="d-grid mb-3">
+          <button type="submit" className="btn btn-success">
             Cadastrar
           </button>
         </div>
-        <p className="forgot-password text-right">
-          Já tem cadastro? <a href="/sign-in">Entre aqui</a>
+        <p classNameName="forgot-password text-right">
+          Já tem cadastro? <a href="/login">Entre aqui</a>
         </p>
       </form>
     </div>
