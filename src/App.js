@@ -2,24 +2,23 @@ import React, { element } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
-import Navbar from "./components/layouts/navbar";
-import Footer from "./components/layouts/Footer";
+
 // React Router Import
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //Import Pages
-import Home from "./components/pages/Home";
-import Sobrenos from "./components/pages/Sobrenos";
-import Contato from "./components/pages/Contato";
-import Comofunciona from "./components/pages/Comofunciona";
-import Cadcondominio from "./components/pages/Cadcondominio";
-import Estag_cad from "./components/pages/Estag_cad";
-import Cadastro from "./components/pages/Cadastro";
-import Login from "./components/pages/Login";
-import Esquecisenha from "./components/pages/Esquecisenha";
-import Perfil from "./components/pages/Perfil";
-import Tasks from "./components/pages/Tasks";
-import Trocapts from "./components/pages/Trocapts";
-import Redefinirsenha from "./components/pages/Redefinirsenha";
+import Home from "./pages/Home";
+import Sobrenos from "./pages/Sobrenos";
+import Contato from "./pages/Contato";
+import Comofunciona from "./pages/Comofunciona";
+import Cadcondominio from "./pages/Cadcondominio";
+import Estag_cad from "./pages/Estag_cad";
+import Cadastro from "./pages/Cadastro";
+import Login from "./pages/Login";
+import Esquecisenha from "./pages/Esquecisenha";
+import Perfil from "./pages/Perfil";
+import Tasks from "./pages/Tasks";
+import Trocapts from "./pages/Trocapts";
+import Redefinirsenha from "./pages/Redefinirsenha";
 
 function App() {
   return (

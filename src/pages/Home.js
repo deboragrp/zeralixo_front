@@ -1,11 +1,10 @@
 import React from "react";
-import Navbar from "../layouts/navbar";
-import Footer from "../layouts/Footer";
+import Navbar from "../components/navbar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import Image from "../../images/condimage.png";
+import Image from "../images/condimage.png";
 
 function Home() {
   return (

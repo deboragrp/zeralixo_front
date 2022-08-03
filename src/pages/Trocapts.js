@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "../layouts/navbar";
-import Footer from "../layouts/Footer";
+import Navbar from "../components/navbar";
 
 function Trocapts() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../layouts/navbar";
+import Navbar2 from "../components/navbar2";
 import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -7,9 +7,18 @@ import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 
 function Perfil() {
+  const [task, setTask] = React.useState();
+  const [allTasks, setAllTasks] = React.useState([]);
+
+  function clickbutton() {
+    setAllTasks(task);
+  }
+  function textOnTextArea(eventTextArea) {
+    setTask(eventTextArea.target.value);
+  }
   return (
     <div>
-      <Navbar />
+      <Navbar2 />
       <Container className="py-5">
         <Row>
           <Col className="col-lg-4  ">
@@ -37,6 +46,7 @@ function Perfil() {
                 <div class="col-12">
                   <div class="form-outline">
                     <input
+                      onChange={textOnTextArea}
                       type="text"
                       id="form1"
                       class="form-control"
@@ -46,17 +56,12 @@ function Perfil() {
                 </div>
 
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary fw-bold">
-                    Salvar
-                  </button>
-                </div>
-
-                <div class="col-12">
                   <button
+                    onClick={clickbutton}
                     type="submit"
-                    class="btn btn-warning text-white fw-bold "
+                    class="btn btn-primary fw-bold"
                   >
-                    Obter tarefas
+                    Salvar
                   </button>
                 </div>
               </form>
@@ -73,20 +78,7 @@ function Perfil() {
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>Limpar área da horta</td>
-                    <td>Feito</td>
-                    <td>
-                      <button type="submit" class="btn btn-danger">
-                        Delete
-                      </button>
-                      <button type="submit" class="btn btn-success ms-1">
-                        Finalizado
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Limpar área das composteiras</td>
+                    <td>{allTasks}</td>
                     <td>Em progresso</td>
                     <td>
                       <button type="submit" class="btn btn-danger">

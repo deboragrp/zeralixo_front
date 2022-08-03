@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "../layouts/navbar";
-import Footer from "../layouts/Footer";
+import Navbar from "../components/navbar";
 import { useNavigate } from "react-router-dom";
 import Alert from "react-bootstrap/Alert";
 

@@ -1,20 +1,20 @@
 import React from "react";
-import Navbar from "../layouts/navbar";
+import Navbar from "../components/navbar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Deboraimg from "../../images/deboraimg.png";
-import Mayara from "../../images/mayaraimg.png";
-import Hugoimg from "../../images/hugoimg.png";
-import Giullyimg from "../../images/giullyimg.png";
-import Deyseimg from "../../images/deyseimg.png";
-import Img1 from "../../images/img1.png";
-import Img3 from "../../images/img3.png";
-import Img4 from "../../images/img4.png";
-import Linkedin from "../../images/linkedin.png";
-import Github from "../../images/github.png";
+import Deboraimg from "../images/deboraimg.png";
+import Mayara from "../images/mayaraimg.png";
+import Hugoimg from "../images/hugoimg.png";
+import Giullyimg from "../images/giullyimg.png";
+import Deyseimg from "../images/deyseimg.png";
+import Img1 from "../images/img1.png";
+import Img3 from "../images/img3.png";
+import Img4 from "../images/img4.png";
+import Linkedin from "../images/linkedin.png";
+import Github from "../images/github.png";
 import { useNavigate } from "react-router-dom";
 
 function Sobrenos() {
@@ -304,7 +304,7 @@ function Sobrenos() {
                   >
                     <Card.Img variant="top" src={Deyseimg} />
                     <Card.Body>
-                      <Card.Title>Deysiane</Card.Title>
+                      <Card.Title>Deysiane Vidal</Card.Title>
                       <a className="me-2" href="https://github.com/Deysividal">
                         <img
                           src={Github}
