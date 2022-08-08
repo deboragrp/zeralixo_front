@@ -17,8 +17,8 @@ function Cadastro() {
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridEmail">
-            <Form.Label>Email</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Label>E-mail</Form.Label>
+            <Form.Control type="e-mail" placeholder="Enter e-mail" />
           </Form.Group>
         </Row>
 

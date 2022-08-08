@@ -10,12 +10,12 @@ function Login() {
       <form className="form-signin w-25 mt-5  m-auto pt-5 ">
         <h3 className=" mb-3 text-center">Login</h3>
         <div className="mb-3">
-          <label>Email </label>
+          <label>E-mail </label>
           <input
             type="email"
             name="email"
             className="form-control"
-            placeholder="Email"
+            placeholder="E-mail"
           />
         </div>
         <div className="mb-3">
