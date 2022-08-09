@@ -38,7 +38,7 @@ function Contato() {
          
         </Row>
     
-        <Form.Group className="mb-3" controlId="formGridAddress1">
+        <Form.Group className="mb-3" controlId="formGridAddress1" >
           <Form.Label>Mensagem</Form.Label>
           <Form.Control placeholder=" " />
         </Form.Group>
