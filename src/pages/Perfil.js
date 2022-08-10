@@ -4,6 +4,8 @@ import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import Avatar from "../images/avatar.png"
 import CardGroup from "react-bootstrap/CardGroup";
 
 function Perfil() {
@@ -22,21 +24,23 @@ function Perfil() {
       <Container className="py-5">
         <Row>
           <Col className="col-lg-4  ">
-            <Card className="text-center mb-5 border  border-success border-4">
-              <Card.Img
-                src="https://blush.design/api/download?shareUri=JRQupTxfYcCI9sSm&c=Backdrop_0%7E9fe1c4_Hair_0%7Ec93305_Skin_0%7E57331f_Top_0%7E86e65f&bg=ffffff&w=800&h=800&fm=png"
+          <Card style={{ width: '18rem', background: ' #D9D9D9' }}>
+             <Card.Img
+                src={Avatar}
                 alt="avatar"
                 class="rounded-circle img-fluid"
-                style={{ width: "150px", marginLeft: "28%" }}
-              />
-              <h5 class="my-2 fw-bold">Maria da Silva</h5>
-              <p class="text-success mb-3  fw-bold">20 Pontos</p>
-              <div class="d-flex justify-content-center mb-2">
-                <button type="button" class="btn btn-outline-success ms-1 mb-3">
-                  Editar perfil
-                </button>
-              </div>
-            </Card>
+                style={{ width: "130px", marginLeft: "28%" }}
+              />      
+          <Card.Body>
+          <Card.Title 
+                style={{ marginLeft: "28%" }}>Maria da Silva</Card.Title>
+        <Card.Text  style={{ marginLeft: "40%" }}>
+                   <p>Aprt. 15</p>
+        </Card.Text>
+        <Button type="button" class="btn btn-outline-success"
+                 style={{ marginLeft: "28%" }}>Editar Perfil</Button>
+          </Card.Body>
+        </Card>
           </Col>
           <Col className="col-lg-8">
             <Card className="mb-4 border  border-success border-4">
