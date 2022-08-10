@@ -1,4 +1,4 @@
-import React from "react";
+import React,  { useState } from "react";
 import Navbar2 from "../components/navbar2";
 import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
@@ -7,10 +7,12 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Avatar from "../images/avatar.png"
 import CardGroup from "react-bootstrap/CardGroup";
+import ModalPerfil from "./ModalPerfil";
 
 function Perfil() {
   const [task, setTask] = React.useState();
   const [allTasks, setAllTasks] = React.useState([]);
+  const [modalShow, setModalShow] = useState(false);
 
   function clickbutton() {
     setAllTasks(task);
@@ -37,8 +39,14 @@ function Perfil() {
         <Card.Text  style={{ marginLeft: "40%" }}>
                    <p>Aprt. 15</p>
         </Card.Text>
-        <Button type="button" class="btn btn-outline-success"
-                 style={{ marginLeft: "28%" }}>Editar Perfil</Button>
+                  <>
+                <Button variant="primary" 
+                        onClick={() => setModalShow(true)} 
+                        style={{ marginLeft: "28%" }}
+                        >Editar Perfil</Button>
+
+                   <ModalPerfil show={modalShow} onHide={() => setModalShow(false)} />
+                  </>
           </Card.Body>
         </Card>
           </Col>
