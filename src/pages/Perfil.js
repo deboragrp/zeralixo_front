@@ -8,6 +8,11 @@ import Button from "react-bootstrap/Button";
 import Avatar from "../images/avatar.png"
 import CardGroup from "react-bootstrap/CardGroup";
 import ModalPerfil from "./ModalPerfil";
+import tomate from "../images/tomate.jpg"
+import coentro from "../images/coentro.jpg"
+import cenoura from "../images/cenoura.png"
+import Badge from 'react-bootstrap/Badge';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 function Perfil() {
   const [task, setTask] = React.useState();
@@ -23,10 +28,12 @@ function Perfil() {
   return (
     <div>
       <Navbar2 />
+
+      {/* Card Perfil */}
       <Container className="py-5">
         <Row>
           <Col className="col-lg-4  ">
-          <Card style={{ width: '18rem', background: ' #D9D9D9' }}>
+          <Card style={{ width: '18rem',height:"18rem", background: ' #F5F3F3' }}>
              <Card.Img
                 src={Avatar}
                 alt="avatar"
@@ -41,7 +48,8 @@ function Perfil() {
         </Card.Text>
                   <>
                 <Button variant="primary" 
-                        onClick={() => setModalShow(true)} 
+                        onClick={() => setModalShow(true)}                        
+                        class="btn btn-outline-success"
                         style={{ marginLeft: "28%" }}
                         >Editar Perfil</Button>
 
@@ -50,10 +58,17 @@ function Perfil() {
           </Card.Body>
         </Card>
           </Col>
-          <Col className="col-lg-8">
-            <Card className="mb-4 border  border-success border-4">
-              <h4 class="text-center my-3 pb-3">TASKS</h4>
 
+
+
+                  {/* Card Task */}
+          <Col className="col-lg-8">
+            <Card className="text-center">
+                <Card.Header>Task</Card.Header>       
+            </Card>
+
+            <Card className="mb-4 "
+            style={{background: ' #F5F3F3', padding: "26px"}}>
               <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
                 <div class="col-12">
                   <div class="form-outline">
@@ -72,8 +87,7 @@ function Perfil() {
                     onClick={clickbutton}
                     type="submit"
                     class="btn btn-primary fw-bold"
-                  >
-                    Salvar
+                  >Salvar
                   </button>
                 </div>
               </form>
@@ -87,6 +101,7 @@ function Perfil() {
                     <th scope="col">Ações</th>
                   </tr>
                 </thead>
+
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
@@ -96,6 +111,7 @@ function Perfil() {
                       <button type="submit" class="btn btn-danger">
                         Delete
                       </button>
+
                       <button type="submit" class="btn btn-success ms-1">
                         Finalizado
                       </button>
@@ -104,50 +120,65 @@ function Perfil() {
                 </tbody>
               </table>
             </Card>
+
+
+                 
+                 {/* Card troca de pontos */}
             <Row>
-              <Col className="col-lg-12">
-                <Card className="  mb-4 border  border-success border-4">
-                  <h4 class="text-center mt-4 mb-4">Troca de Pontos</h4>
+            <Col className="col-lg-12">
+                   
+            <Card className="text-center">
+                <Card.Header>Troca de Pontos</Card.Header>       
+            </Card>
 
-                  <CardGroup>
-                    <Card className="  border  border-success border-3">
-                      <Card.Body>
-                        <Card.Title className="text-success fw-bold">
-                          15pts
-                        </Card.Title>
-                        <Card.Img
-                          variant="top"
-                          src="https://www.quitandatomio.com.br/upload/1284382069-13-beneficios-da-cebolinha-para-que-serve-e-propriedades.jpg"
-                        />
-                      </Card.Body>
-                    </Card>
+             <CardGroup>
+             <Card>
+               <Card.Img variant="top" src={tomate} style={{  width: "150px",  marginLeft: "18%", marginTop:"10%"}}/>
+            <Card.Body>
+             <Card.Title style={{ marginLeft: "30%"}}>Tomates</Card.Title>
+             <Card.Text>
+             O tomate é uma boa fonte de vitaminas A, C e do complexo B. 
+             O mesmo também possui quantidades significativas de sais minerais, 
+             como o Ferro, Potássio, Cálcio, entre outros.
+             </Card.Text>
+                      <button type="submit" class="btn btn-success" style={{ marginLeft: "32%"}} >
+                        Trocar
+                      </button>
+            </Card.Body>
+             </Card>
 
-                    <Card className="  border  border-success border-3">
-                      <Card.Body>
-                        <Card.Title className="text-success fw-bold">
-                          15pts
-                        </Card.Title>
-                        <Card.Img
-                          variant="top"
-                          src="https://media.istockphoto.com/photos/cilantro-picture-id184908546?k=20&m=184908546&s=612x612&w=0&h=JA4BtgVbC9r5XMvKitB0jzgLzueF_C3fM1BpXGaJuqQ="
-                        />
-                      </Card.Body>
-                    </Card>
+             <Card>
+               <Card.Img variant="top" src={coentro} style={{   width: "140px",  marginLeft: "18%", marginTop:"4%"}}/>
+             <Card.Body>
+             <Card.Title style={{ marginLeft: "30%"}}>Coentro</Card.Title>
+             <Card.Text>
+             O coentro contém propriedades digestivas e anti-inflamatórias, 
+             ajudando a combater a má digestão e a constipação. Tambem diminui a pressão arterial.
+             </Card.Text>
+                      <button type="submit" class="btn btn-success " style={{ marginLeft: "32%"}}>
+                        Trocar
+                      </button>
+             </Card.Body>
+            </Card>
+         
+             <Card>
+                <Card.Img variant="top" src={cenoura} style={{  width: "140px",  marginLeft: "18%", marginTop:"4%"}} />
+         <Card.Body>
+          <Card.Title style={{ marginLeft: "30%"}}>Cenoura</Card.Title>
+          <Card.Text>
+          A cenoura é rica em sais minerais, como ferro e cálcio, 
+          vitaminas K, A, C, E e do complexo B.
+          Por isso ela ajuda na saúde dos olhos, pele e até do cérebro.
+          </Card.Text>
+                      <button type="submit" class="btn btn-success" style={{ marginLeft: "32%"}}>
+                        Trocar
+                      </button>
+        </Card.Body>
+     
+               </Card>
+             </CardGroup>
+            </Col>
 
-                    <Card className="  border  border-success border-3">
-                      <Card.Body>
-                        <Card.Title className="text-success fw-bold">
-                          20pts
-                        </Card.Title>
-                        <Card.Img
-                          variant="top"
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeRhWwZ9-1J3p2Rc4IvyO8Cwl3S-2RgMm8bA&usqp=CAU"
-                        />
-                      </Card.Body>
-                    </Card>
-                  </CardGroup>
-                </Card>
-              </Col>
             </Row>
           </Col>
         </Row>

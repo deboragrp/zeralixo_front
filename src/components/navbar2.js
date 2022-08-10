@@ -18,19 +18,21 @@ function Navbar2() {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style={{background:'white'}}
+
         >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav m-auto">
             <li className="nav-item">
-              <a
+            <a
                 className="nav-link active text-white text-uppercase ms-5"
                 aria-current="page"
-                href="/"
+                href="/sobrenos"
               >
-                Home <i class="fa-solid fa-house"></i>
-              </a>
+                Home        
+                </a>
             </li>
             <li className="nav-item">
               <a
