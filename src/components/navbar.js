@@ -7,17 +7,20 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-dark ">
       <div className="container-fluid">
-        <a className="navbar-brand ms-5 " href="#">
+        <a className="navbar-brand ms-5 ">
           <img src={logo} alt="logo" style={{ width: "60px" }} />
         </a>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler "
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style={{
+            background: "#f8f9fa",
+          }}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -29,7 +32,7 @@ function Navbar() {
                 aria-current="page"
                 href="/"
               >
-                Home <i class="fa-solid fa-house"></i>
+                Home
               </a>
             </li>
             <li className="nav-item">
@@ -61,14 +64,14 @@ function Navbar() {
             </li>
           </ul>
           <button
-            className="btn btn-outline-light me-1"
+            className="btn btn-outline-light me-1 ms-5"
             onClick={() => navigate("/cadastro")}
             aria-current="page"
           >
             Cadastre-se
           </button>
           <button
-            className="btn btn-success me-5"
+            className="btn btn-success me-5 "
             onClick={() => navigate("/login")}
             aria-current="page"
           >

@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Image from "../images/condimage.png";
+import axios from "../config/axios";
 
 function Home() {
   return (
@@ -12,7 +13,7 @@ function Home() {
       <Navbar />
       <Container>
         <Row>
-          <Col>
+          <Col className="col-md-6 col-sm-12 col-12">
             <div className=" mt-5 pt-5">
               <h1
                 className="banner-title "
@@ -33,9 +34,9 @@ function Home() {
               </Button>
             </div>
           </Col>
-          <Col>
+          <Col className="col-md-6 ">
             <div className=" mt-4 pt-4">
-              <img src={Image} />
+              <img className="img-fluid" src={Image} />
             </div>
           </Col>
         </Row>

@@ -11,13 +11,16 @@ function Navbar2() {
           <img src={logo} alt="logo" style={{ width: "60px" }} />
         </a>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler "
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style={{
+            background: "#f8f9fa",
+          }}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -62,7 +65,7 @@ function Navbar2() {
           </ul>
 
           <button
-            className="btn btn-success me-5"
+            className="btn btn-success me-5 ms-5"
             onClick={() => navigate("/")}
             aria-current="page"
           >

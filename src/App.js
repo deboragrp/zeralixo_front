@@ -1,4 +1,4 @@
-import React, { element } from "react";
+import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
@@ -25,7 +25,7 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/sobrenos" element={<Sobrenos />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/comofunciona" element={<Comofunciona />} />
