@@ -37,7 +37,7 @@
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/deboragrp"><img style="border-radius: 50%;" src="hhttps://avatars.githubusercontent.com/u/104926904?v=4" width="100px;" alt=""/><br /><sub><b>Débora Pinto</b></sub></a><br /><a href="https://github.com/deboragrp" title="Débora Pinto">🚀</a></td>
+    <td align="center"><a href="https://github.com/deboragrp"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104926904?v=4" width="100px;" alt=""/><br /><sub><b>Débora Pinto</b></sub></a><br /><a href="https://github.com/deboragrp" title="Débora Pinto">🚀</a></td>
     <td align="center"><a href="https://github.com/hugoalbuquerq"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99693497?v=4" width="100px;" alt=""/><br /><sub><b>Hugo Albuquerque</b></sub></a><br /><a href="https://github.com/hugoalbuquerq" title="Hugo Albuquerque">🚀</a></td>
     <td align="center"><a href="https://github.com/Mayara-Ribeiro"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/74618247?v=4" width="100px;" alt=""/><br /><sub><b>Mayara Ribeiro</b></sub></a><br /><a href="https://github.com/Mayara-Ribeiro" title="Mayara Ribeiro">🚀</a></td>
     <td align="center"><a href="https://github.com/Deysividal"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/110122231?v=4" width="100px;" alt=""/><br /><sub><b>Deysiane Vidal</b></sub></a><br /><a href="https://github.com/Deysividal" title="Deysiane Vidal">🚀</a></td>
