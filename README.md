@@ -35,7 +35,7 @@
 
 <h2 align="left">👨‍💻 Desenvolvedores</h2>
 
-<table>
+<table align="center">
   <tr>
     <td align="center"><a href="https://github.com/deboragrp"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104926904?v=4" width="100px;" alt=""/><br /><sub><b>Débora Pinto</b></sub></a><br /><a href="https://github.com/deboragrp" title="Débora Pinto">🚀</a></td>
     <td align="center"><a href="https://github.com/hugoalbuquerq"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99693497?v=4" width="100px;" alt=""/><br /><sub><b>Hugo Albuquerque</b></sub></a><br /><a href="https://github.com/hugoalbuquerq" title="Hugo Albuquerque">🚀</a></td>
