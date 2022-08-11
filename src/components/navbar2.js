@@ -65,7 +65,7 @@ function Navbar2() {
           </ul>
 
           <button
-            className="btn btn-success me-5 ms-5"
+            className="btn btn-danger me-5 ms-5"
             onClick={() => navigate("/")}
             aria-current="page"
           >
