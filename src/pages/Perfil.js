@@ -198,7 +198,8 @@ function Perfil() {
              <Card.Text>
              O tomate é uma boa fonte de vitaminas A, C e do complexo B. 
              O mesmo também possui quantidades significativas de sais minerais, 
-             como o Ferro, Potássio, Cálcio, entre outros.
+             como Ferro, Potássio, Cálcio, Magnésio, além de conter 
+             pouquíssimas calorias.
              </Card.Text>
                       <button type="submit" class="btn btn-success" style={{ marginLeft: "32%"}} >
                         Trocar
@@ -214,7 +215,7 @@ function Perfil() {
              O coentro contém propriedades digestivas e anti-inflamatórias, 
              ajudando a combater a má digestão e a constipação. Tambem diminui a pressão arterial 
              e auxiliar no tratamento da diabetes.
-             </Card.Text>
+             </Card.Text><br></br>
                       <button type="submit" class="btn btn-success " style={{ marginLeft: "32%"}}>
                         Trocar
                       </button>
