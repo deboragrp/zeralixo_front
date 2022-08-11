@@ -1,71 +1,49 @@
-# Getting Started with Create React App
+<h1 align="center">♻️ PROJETO ZERA LIXO ♻️</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###
 
-## Available Scripts
+<div align="center">
+  <img height="325" src="https://i.imgur.com/T3tr9bW.jpeg"  />
+</div>
 
-In the project directory, you can run:
+###
 
-### `npm start`
+<h2 align="left">💻 Sobre o Projeto</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br clear="both">
 
-### `npm test`
+<p align="left">ZeraLixo é um projeto de composteiras com minhocario e horta comunitária em conjunto com a tecnologia aplicadas em condomínios com grande geração de lixo orgânico. <br><br>Com base na ODS 11 - Cidades e Comunidades Sustentáveis, este é um projeto para o Trabalho de Conclusão do curso Start, ministrado pela Rede Cidadã em parceria com a Accenture Brasil.</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###
 
-### `npm run build`
+<h2 align="left">🛠 Tecnologias usadas neste projeto</h2>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+###
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" width="42" alt="html5 logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" width="42" alt="css3 logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" width="42" alt="javascript logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="30" width="42" alt="bootstrap logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" width="42" alt="react logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="30" width="42" alt="nodejs logo"  />
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###
 
-### `npm run eject`
+<h2 align="left">👨‍💻 Desenvolvedores</h2>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<table align="center">
+  <tr>
+    <td align="center"><a href="https://github.com/deboragrp"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104926904?v=4" width="100px;" alt=""/><br /><sub><b>Débora Pinto</b></sub></a><br /><a href="https://github.com/deboragrp" title="Débora Pinto">🐝</a></td>
+    <td align="center"><a href="https://github.com/hugoalbuquerq"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99693497?v=4" width="100px;" alt=""/><br /><sub><b>Hugo Albuquerque</b></sub></a><br /><a href="https://github.com/hugoalbuquerq" title="Hugo Albuquerque">🕷️</a></td>
+    <td align="center"><a href="https://github.com/Mayara-Ribeiro"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/74618247?v=4" width="100px;" alt=""/><br /><sub><b>Mayara Ribeiro</b></sub></a><br /><a href="https://github.com/Mayara-Ribeiro" title="Mayara Ribeiro">🐞</a></td>
+    <td align="center"><a href="https://github.com/Deysividal"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/110122231?v=4" width="100px;" alt=""/><br /><sub><b>Deysiane Vidal</b></sub></a><br /><a href="https://github.com/Deysividal" title="Deysiane Vidal">🚀</a></td>
+    <td align="center"><a href="https://github.com/giullydomingos"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104655230?v=4" width="100px;" alt=""/><br /><sub><b>Giully Domingos</b></sub></a><br /><a href="https://github.com/giullydomingos" title="Giully Domingos">🚀</a></td>
+  </tr>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+</table>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# react-zeralixo
+###
