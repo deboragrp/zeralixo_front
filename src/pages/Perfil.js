@@ -14,6 +14,8 @@ import cenoura from "../images/cenoura.png"
 import Badge from 'react-bootstrap/Badge';
 import ListGroup from 'react-bootstrap/ListGroup';
 
+
+
 function Perfil() {
   const [task, setTask] = React.useState();
   const [allTasks, setAllTasks] = React.useState([]);
@@ -32,7 +34,7 @@ function Perfil() {
       {/* Card Perfil */}
       <Container className="py-5">
         <Row>
-          <Col className="col-lg-4  ">
+          <Col className="col-12  col-lg-4 ">
           <Card style={{ width: '18rem',height:"18rem", background: ' #F5F3F3' }}>
              <Card.Img
                 src={Avatar}
@@ -43,8 +45,8 @@ function Perfil() {
           <Card.Body>
           <Card.Title 
                 style={{ marginLeft: "28%" }}>Maria da Silva</Card.Title>
-        <Card.Text  style={{ marginLeft: "40%" }}>
-                   <p>Aprt. 15</p>
+        <Card.Text  style={{ marginLeft: "35%" }}>
+                   <p>20 Pontos</p>
         </Card.Text>
                   <>
                 <Button variant="primary" 
@@ -56,19 +58,76 @@ function Perfil() {
                    <ModalPerfil show={modalShow} onHide={() => setModalShow(false)} />
                   </>
           </Card.Body>
-        </Card>
+        </Card><br></br>
+
+                 {/* Card Status */}
+        <Card className="text-center"   style={{ width: "18rem"}}>
+                <Card.Header>Status</Card.Header>       
+            </Card>
+      <ListGroup as="ol" numbered style={{ width: "18rem"}}>
+      <ListGroup.Item
+        as="li"
+        className="d-flex justify-content-between align-items-start"
+      >
+        <div className="ms-2 me-auto">
+          <div className="fw-bold">Tarefas</div>
+          Total de Tarefas         
+        </div>
+        <Badge bg="primary" pill>
+          14
+        </Badge>
+      </ListGroup.Item>
+
+      <ListGroup.Item
+        as="li"
+        className="d-flex justify-content-between align-items-start"
+      >
+        <div className="ms-2 me-auto">
+          <div className="fw-bold">Abertas</div>
+          Tarefas em andamento     
+          </div>
+        <Badge bg="primary" pill>
+          3
+        </Badge>
+        </ListGroup.Item>
+
+      <ListGroup.Item
+        as="li"
+        className="d-flex justify-content-between align-items-start"
+      >
+        <div className="ms-2 me-auto">
+          <div className="fw-bold">Finalizadas</div>
+            Total de tarefas finalizadas        
+          </div>
+        <Badge bg="primary" pill>
+          9
+        </Badge>
+      </ListGroup.Item>
+
+      <ListGroup.Item
+        as="li"
+        className="d-flex justify-content-between align-items-start"
+      >
+        <div className="ms-2 me-auto">
+          <div className="fw-bold">Canceladas</div>
+           Total de tarefas canceladas        
+          </div>
+        <Badge bg="primary" pill>
+          2
+        </Badge>
+      </ListGroup.Item>
+    </ListGroup>
           </Col>
 
-
-
+  
                   {/* Card Task */}
-          <Col className="col-lg-8">
+          <Col className="col-lg-8"   style={{}}>
             <Card className="text-center">
                 <Card.Header>Task</Card.Header>       
             </Card>
 
             <Card className="mb-4 "
-            style={{background: ' #F5F3F3', padding: "26px"}}>
+            style={{padding: "26px"}}>
               <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
                 <div class="col-12">
                   <div class="form-outline">
@@ -153,7 +212,8 @@ function Perfil() {
              <Card.Title style={{ marginLeft: "30%"}}>Coentro</Card.Title>
              <Card.Text>
              O coentro contém propriedades digestivas e anti-inflamatórias, 
-             ajudando a combater a má digestão e a constipação. Tambem diminui a pressão arterial.
+             ajudando a combater a má digestão e a constipação. Tambem diminui a pressão arterial 
+             e auxiliar no tratamento da diabetes.
              </Card.Text>
                       <button type="submit" class="btn btn-success " style={{ marginLeft: "32%"}}>
                         Trocar
@@ -168,7 +228,8 @@ function Perfil() {
           <Card.Text>
           A cenoura é rica em sais minerais, como ferro e cálcio, 
           vitaminas K, A, C, E e do complexo B.
-          Por isso ela ajuda na saúde dos olhos, pele e até do cérebro.
+          Por isso ela ajuda na saúde dos olhos, pele e até do cérebro, 
+          além de ter influência positiva no colesterol.
           </Card.Text>
                       <button type="submit" class="btn btn-success" style={{ marginLeft: "32%"}}>
                         Trocar
