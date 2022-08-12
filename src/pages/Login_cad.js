@@ -1,14 +1,14 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Navbar from "../components/navbar";
+import { useNavigate } from "react-router-dom";
 
-function Login() {
+function Estag_cad() {
   let navigate = useNavigate();
   return (
     <div>
       <Navbar />
       <form className="form-signin w-25 mt-5  m-auto pt-5 ">
-        <h3 className=" mb-3 text-center">Login</h3>
+        <h3 className=" mb-3 text-center">Login Condomínio</h3>
         <div className="mb-3">
           <label>Email </label>
           <input
@@ -50,4 +50,4 @@ function Login() {
     </div>
   );
 }
-export default Login;
+export default Estag_cad;

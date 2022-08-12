@@ -5,9 +5,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Image from "../images/condimage.png";
+import { useNavigate } from "react-router-dom";
 import axios from "../config/axios";
 
 function Home() {
+  let navigate = useNavigate();
   return (
     <div>
       <Navbar />
@@ -29,8 +31,16 @@ function Home() {
                 <br /> de vida na terra. Mas o seu condomínio pode fazer
                 diferente.
               </p>
-              <Button className="buttonCond" variant="success">
+              <Button
+                className="me-3"
+                variant="outline-success"
+                onClick={() => navigate("/cadcondominio")}
+              >
                 Quero no meu condominio
+              </Button>
+
+              <Button variant="success" onClick={() => navigate("/logincad")}>
+                Login do condomínio
               </Button>
             </div>
           </Col>

@@ -32,7 +32,7 @@ function Navbar2() {
                 aria-current="page"
                 href="/"
               >
-                Home <i class="fa-solid fa-house"></i>
+                Home
               </a>
             </li>
             <li className="nav-item">

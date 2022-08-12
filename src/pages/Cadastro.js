@@ -22,6 +22,7 @@ function Cadastro() {
     cidade: "",
     estado: "",
     funcao: "",
+    seg: "",
   });
 
   function enviarDados(e) {
@@ -59,7 +60,7 @@ function Cadastro() {
                 setCad({ ...cad, email: e.target.value });
               }}
               type="email"
-              placeholder="Enter email"
+              placeholder="Email"
             />
           </Form.Group>
         </Row>
@@ -212,7 +213,7 @@ function Cadastro() {
         </Row>
         {/* Bairro*/}
         <Row className="mb-3">
-          <Form.Group as={Col} controlId="formGridPassword">
+          <Form.Group as={Col} lg={3} sm={12} controlId="formGridPassword">
             <Form.Label>Bairro</Form.Label>
             <Form.Control
               value={cad.bairro}
@@ -226,7 +227,7 @@ function Cadastro() {
           </Form.Group>
 
           {/* cidade*/}
-          <Form.Group as={Col} controlId="formGridCity">
+          <Form.Group as={Col} lg={3} sm={12} controlId="formGridCity">
             <Form.Label>Cidade</Form.Label>
             <Form.Control
               value={cad.cidade}
@@ -238,7 +239,7 @@ function Cadastro() {
           </Form.Group>
 
           {/* Estado*/}
-          <Form.Group as={Col} controlId="formGridState">
+          <Form.Group as={Col} lg={3} sm={12} controlId="formGridState">
             <Form.Label>Estado</Form.Label>
             <Form.Select
               onChange={(e) => {
@@ -274,6 +275,17 @@ function Cadastro() {
               <option value="Tocantins">Tocantins</option>
               <option value="Distrito Federal">Distrito Federal</option>
             </Form.Select>
+          </Form.Group>
+
+          <Form.Group as={Col} lg={3} sm={12}>
+            <Form.Label>Nº de Segurança</Form.Label>
+            <Form.Control
+              value={cad.seg}
+              onChange={(e) => {
+                setCad({ ...cad, seg: e.target.value });
+              }}
+              placeholder="Nº de segurança"
+            />
           </Form.Group>
         </Row>
 

@@ -11,7 +11,7 @@ import Sobrenos from "./pages/Sobrenos";
 import Contato from "./pages/Contato";
 import Comofunciona from "./pages/Comofunciona";
 import Cadcondominio from "./pages/Cadcondominio";
-import Estag_cad from "./pages/Estag_cad";
+import Login_cad from "./pages/Login_cad";
 import Cadastro from "./pages/Cadastro";
 import Login from "./pages/Login";
 import Esquecisenha from "./pages/Esquecisenha";
@@ -30,7 +30,7 @@ function App() {
           <Route path="/contato" element={<Contato />} />
           <Route path="/comofunciona" element={<Comofunciona />} />
           <Route path="/cadcondominio" element={<Cadcondominio />} />
-          <Route path="/estagiodocad" element={<Estag_cad />} />
+          <Route path="/logincad" element={<Login_cad />} />
           <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/login" element={<Login />} />
           <Route path="/esqueciminhasenha" element={<Esquecisenha />} />
