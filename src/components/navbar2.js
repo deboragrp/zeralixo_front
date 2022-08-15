@@ -1,9 +1,21 @@
-import React from "react";
 import logo from "../images/logo.svg";
+
 import { useNavigate } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { UserContext } from "../App";
 
 function Navbar2() {
+  const { setToken } = useContext(UserContext);
   let navigate = useNavigate();
+  function confirmSair(e) {
+    e.preventDefault();
+    if (window.confirm("Deseja realmente sair do sistema?")) {
+      console.log("Saiu");
+      localStorage.removeItem("token");
+      setToken("");
+      navigate("/");
+    }
+  }
   return (
     <nav className="navbar navbar-expand-lg bg-dark ">
       <div className="container-fluid">
@@ -66,8 +78,8 @@ function Navbar2() {
 
           <button
             className="btn btn-danger me-5 ms-5"
-            onClick={() => navigate("/")}
             aria-current="page"
+            onClick={(e) => confirmSair(e)}
           >
             Sair
           </button>

@@ -47,7 +47,7 @@ function Perfil() {
               />
               <Card.Body>
                 <Card.Title className="text-light fw-bold text-center">
-                  Maria da Silva
+                  Luisa Sonza
                 </Card.Title>
                 <Card.Text className="text-light fw-bold text-center">
                   <p>20 Pontos</p>

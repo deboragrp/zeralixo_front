@@ -16,7 +16,6 @@ function Cadcondominio() {
     bairro: "",
     cidade: "",
     estado: "",
-    seg: "",
   });
 
   function enviarDados(e) {
@@ -115,7 +114,7 @@ function Cadcondominio() {
           </Form.Group>
         </Row>
         <Row className="mb-3">
-          <Form.Group as={Col} lg={3} md={12} controlId="formGridAddress2">
+          <Form.Group as={Col} lg={4} md={12} controlId="formGridAddress2">
             <Form.Label>Bairro</Form.Label>
             <Form.Control
               value={cad.bairro}
@@ -129,7 +128,7 @@ function Cadcondominio() {
           </Form.Group>
 
           {/* cidade*/}
-          <Form.Group as={Col} lg={3} md={12} controlId="formGridCity">
+          <Form.Group as={Col} lg={4} md={12} controlId="formGridCity">
             <Form.Label>Cidade</Form.Label>
             <Form.Control
               value={cad.cidade}
@@ -141,7 +140,7 @@ function Cadcondominio() {
           </Form.Group>
 
           {/* Estado*/}
-          <Form.Group as={Col} lg={3} md={12} controlId="formGridState">
+          <Form.Group as={Col} lg={4} md={12} controlId="formGridState">
             <Form.Label>Estado</Form.Label>
             <Form.Select
               onChange={(e) => {
@@ -177,17 +176,6 @@ function Cadcondominio() {
               <option value="Tocantins">Tocantins</option>
               <option value="Distrito Federal">Distrito Federal</option>
             </Form.Select>
-          </Form.Group>
-
-          <Form.Group as={Col} lg={3} md={12}>
-            <Form.Label>Nº de Segurança</Form.Label>
-            <Form.Control
-              value={cad.seg}
-              onChange={(e) => {
-                setCad({ ...cad, seg: e.target.value });
-              }}
-              placeholder="Nº de segurança"
-            />
           </Form.Group>
         </Row>
 

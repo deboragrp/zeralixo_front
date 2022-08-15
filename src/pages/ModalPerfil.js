@@ -80,8 +80,12 @@ function ModalPerfil(props) {
       </Modal.Body>
 
       <Modal.Footer>
-        <Button variant="success" onClick={handleClose}></Button>
-        <Button variant="secondary" onClick={handleClose}></Button>
+        <Button variant="success" onClick={handleClose}>
+          Salvar
+        </Button>
+        <Button variant="secondary" onClick={handleClose}>
+          Fechar
+        </Button>
       </Modal.Footer>
     </Modal>
   );

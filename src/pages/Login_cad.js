@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/navbar";
 import { useNavigate } from "react-router-dom";
 
-function Estag_cad() {
+function Login_cad() {
   let navigate = useNavigate();
   return (
     <div>
@@ -50,4 +50,4 @@ function Estag_cad() {
     </div>
   );
 }
-export default Estag_cad;
+export default Login_cad;
