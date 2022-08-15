@@ -66,7 +66,7 @@ function Navbar() {
             </li>
           </ul>
           <button
-            className="btn btn-outline-light me-1 ms-5"
+            className="btn btn-outline-light me-2 ms-5"
             onClick={() => navigate("/cadastro")}
             aria-current="page"
           >

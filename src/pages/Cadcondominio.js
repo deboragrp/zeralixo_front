@@ -47,14 +47,14 @@ function Cadcondominio() {
 
           {/* email*/}
           <Form.Group as={Col} md={6} sm={12} controlId="formGridEmail">
-            <Form.Label>Email</Form.Label>
+            <Form.Label>E-mail</Form.Label>
             <Form.Control
               value={cad.email}
               onChange={(e) => {
                 setCad({ ...cad, email: e.target.value });
               }}
               type="email"
-              placeholder="Email"
+              placeholder="E-mail"
             />
           </Form.Group>
         </Row>

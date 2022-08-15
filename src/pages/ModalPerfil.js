@@ -27,12 +27,20 @@ function ModalPerfil(props) {
             <Row>
               <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>Nome Completo</Form.Label>
-                <Form.Control type="text" placeholder="Nome completo" />
+                <Form.Control
+                  type="text"
+                  value="Luisa Sonza"
+                  placeholder="Nome completo"
+                />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>E-mail</Form.Label>
-                <Form.Control type="e-mail" placeholder="Enter e-mail" />
+                <Form.Control
+                  type="e-mail"
+                  value="luisa.sonza@gmail.com"
+                  placeholder="E-mail"
+                />
               </Form.Group>
             </Row>
 
@@ -41,6 +49,7 @@ function ModalPerfil(props) {
                 <Form.Label>Senha</Form.Label>
                 <Form.Control
                   type="password"
+                  value="62f6a3d1e0625fcd553ff580"
                   placeholder="ID do seu condomínio"
                 />
               </Form.Group>
@@ -50,7 +59,7 @@ function ModalPerfil(props) {
               <Form.Group as={Col} controlId="formGridState">
                 <Form.Label>Função</Form.Label>
 
-                <Form.Select defaultValue="Escolha...">
+                <Form.Select defaultValue="Limpar">
                   <option>Escolha...</option>
                   <option>Regar</option>
                   <option>Colher</option>
@@ -63,12 +72,20 @@ function ModalPerfil(props) {
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>Seu andar</Form.Label>
-                <Form.Control type="number" placeholder="Escolha seu andar" />
+                <Form.Control
+                  type="number"
+                  value="10"
+                  placeholder="Escolha seu andar"
+                />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Nº do apt</Form.Label>
-                <Form.Control type="number" placeholder="Número do seu apt" />
+                <Form.Control
+                  type="number"
+                  value="1002"
+                  placeholder="Número do seu apt"
+                />
               </Form.Group>
             </Row>
           </Row>

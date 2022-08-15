@@ -21,7 +21,7 @@ function Perfil() {
 
   const [task, setTask] = useState("");
 
-  const [itemsList, setItemsList] = useState([]);
+  const [itemsList, setItemsList] = useState(["Limpar área das composteiras"]);
 
   function handleChangeInput(e) {
     const inputTask = e.target.value;
@@ -55,7 +55,7 @@ function Perfil() {
         <Row>
           <Col className="col-12  col-lg-4 col-md-6">
             <Card
-              className="shadow"
+              className="shadow mb-3"
               style={{
                 width: "18rem",
                 height: "18rem",

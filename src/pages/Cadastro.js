@@ -53,14 +53,14 @@ function Cadastro() {
 
           {/* email*/}
           <Form.Group as={Col} sm={6} controlId="formGridEmail">
-            <Form.Label>Email</Form.Label>
+            <Form.Label>E-mail</Form.Label>
             <Form.Control
               value={cad.email}
               onChange={(e) => {
                 setCad({ ...cad, email: e.target.value });
               }}
               type="email"
-              placeholder="Email"
+              placeholder="E-mail"
             />
           </Form.Group>
         </Row>

@@ -26,15 +26,15 @@ function Contato() {
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridEmail">
-                <Form.Label>Email</Form.Label>
+                <Form.Label>E-mail</Form.Label>
                 <Form.Control type="email" placeholder="E-mail" />
               </Form.Group>
             </Row>
 
             <Row className="mb-3">
               <Form.Group as={Col}>
-                <Form.Label>Contato</Form.Label>
-                <Form.Control type="tel" placeholder="Contato" />
+                <Form.Label>Telefone</Form.Label>
+                <Form.Control type="tel" placeholder="(DDD) 99999-9999" />
               </Form.Group>
 
               <Form.Group as={Col}>

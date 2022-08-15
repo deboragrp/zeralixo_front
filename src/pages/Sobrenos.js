@@ -77,7 +77,7 @@ function Sobrenos() {
           <Row>
             <div className="container px-4 py-5" id="icon-grid">
               <h2 className="pb-2 border-bottom fw-bold text-success">
-                Features do ZeraLixo
+                Funcionalidades do ZeraLixo
               </h2>
 
               <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
@@ -174,7 +174,7 @@ function Sobrenos() {
           <div>
             <div className="justify-content-center pt-5">
               <h2 className="pb-2 border-bottom text-success fw-bold">
-                Team ZeraLixo
+                Equipe ZeraLixo
               </h2>
 
               <Row className="mb-5 mt-5">
