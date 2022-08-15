@@ -1,38 +1,41 @@
 import React from "react";
 import logo from "../images/logo.svg";
+
 import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   let navigate = useNavigate();
+
   return (
     <nav className="navbar navbar-expand-lg bg-dark ">
       <div className="container-fluid">
-        <a className="navbar-brand ms-5 " href="#">
+        <a className="navbar-brand ms-5 ">
           <img src={logo} alt="logo" style={{ width: "60px" }} />
         </a>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler "
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          style={{background:'white'}}
-
+          style={{
+            background: "#f8f9fa",
+          }}
         >
-          <span className="navbar-toggler-icon" ></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav m-auto">
-          <li className="nav-item">
+            <li className="nav-item">
               <a
                 className="nav-link active text-white text-uppercase ms-5"
                 aria-current="page"
-                href="/sobrenos"
+                href="/"
               >
-                Home        
-                </a>
+                Home
+              </a>
             </li>
             <li className="nav-item">
               <a
@@ -63,14 +66,14 @@ function Navbar() {
             </li>
           </ul>
           <button
-            className="btn btn-outline-light me-1"
+            className="btn btn-outline-light me-1 ms-5"
             onClick={() => navigate("/cadastro")}
             aria-current="page"
           >
             Cadastre-se
           </button>
           <button
-            className="btn btn-success me-5"
+            className="btn btn-success me-5 "
             onClick={() => navigate("/login")}
             aria-current="page"
           >

@@ -5,14 +5,17 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Image from "../images/condimage.png";
+import { useNavigate } from "react-router-dom";
+import axios from "../config/axios";
 
 function Home() {
+  let navigate = useNavigate();
   return (
     <div>
       <Navbar />
       <Container>
         <Row>
-          <Col>
+          <Col className="col-md-6 col-sm-12 col-12">
             <div className=" mt-5 pt-5">
               <h1
                 className="banner-title "
@@ -28,14 +31,22 @@ function Home() {
                 <br /> de vida na terra. Mas o seu condomínio pode fazer
                 diferente.
               </p>
-              <Button className="buttonCond" variant="success">
+              <Button
+                className="me-3"
+                variant="outline-success"
+                onClick={() => navigate("/cadcondominio")}
+              >
                 Quero no meu condominio
+              </Button>
+
+              <Button variant="success" onClick={() => navigate("/logincad")}>
+                Login do condomínio
               </Button>
             </div>
           </Col>
-          <Col>
+          <Col className="col-md-6 ">
             <div className=" mt-4 pt-4">
-              <img src={Image} />
+              <img className="img-fluid" src={Image} />
             </div>
           </Col>
         </Row>
