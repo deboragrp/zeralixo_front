@@ -1,9 +1,48 @@
-import React from "react";
-import Navbar from "../components/navbar";
+import React, { useContext, useState } from "react";
+import { UserContext } from "../App";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import Navbar from "../components/navbar";
+import { axiosInstance } from "../config/axios";
+
+import ModalPreencher from "../components/modals/ModalPreencher";
+import ModalServidor from "../components/modals/ModalServidor";
 
 function Login_cad() {
   let navigate = useNavigate();
+  const { setToken } = useContext(UserContext);
+  const [modalShowPreencher, setModalShowPreencher] = useState(false);
+  const [modalShowModalServidor, setShowModalServidor] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+      navigate("/perfilcad");
+    }
+  }, [navigate]);
+
+  const [login, setLogin] = useState({
+    email: "",
+    senha: "",
+  });
+
+  function submitLogin(e) {
+    e.preventDefault();
+    if (login.email === "" || login.senha === "") {
+      setModalShowPreencher(true);
+    } else {
+      axiosInstance.post("/api/auth/logincond", login).then((res) => {
+        console.log(res);
+        if (res.status == 200) {
+          localStorage.setItem("token", res.data.token);
+          setToken(res.data.token);
+          navigate("/perfilcad");
+        } else {
+          setShowModalServidor(true);
+        }
+      });
+    }
+  }
+
   return (
     <div>
       <Navbar />
@@ -16,27 +55,28 @@ function Login_cad() {
             name="email"
             className="form-control"
             placeholder="Email"
+            value={login.email}
+            onChange={(e) => {
+              setLogin({ ...login, email: e.target.value });
+            }}
           />
         </div>
         <div className="mb-3">
           <label>Senha</label>
-          <input type="password" className="form-control" placeholder="Senha" />
+          <input
+            type="password"
+            className="form-control"
+            placeholder="Senha"
+            value={login.senha_idcond}
+            onChange={(e) => {
+              setLogin({ ...login, senha: e.target.value });
+            }}
+          />
         </div>
-        <div className="mb-3">
-          <div className="custom-control custom-checkbox ">
-            <input
-              type="checkbox"
-              className="custom-control-input me-2"
-              id="customCheck1"
-            />
-            <label className="custom-control-label" htmlFor="customCheck1">
-              Lembrar de mim
-            </label>
-          </div>
-        </div>
+
         <div className="d-grid">
           <button
-            onClick={() => navigate("/perfil")}
+            onClick={submitLogin}
             type="submit"
             className="btn btn-success"
           >
@@ -47,6 +87,16 @@ function Login_cad() {
           Esqueceu a <a href="/esqueciminhasenha">senha?</a>
         </p>
       </form>
+      <div className="d-grid gap-2 mx-auto pb-5">
+        <ModalServidor
+          show={modalShowModalServidor}
+          onHide={() => setShowModalServidor(false)}
+        />
+        <ModalPreencher
+          show={modalShowPreencher}
+          onHide={() => setModalShowPreencher(false)}
+        />
+      </div>
     </div>
   );
 }

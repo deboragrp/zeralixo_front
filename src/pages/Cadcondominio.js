@@ -21,6 +21,7 @@ function Cadcondominio() {
   function enviarDados(e) {
     e.preventDefault();
     axiosInstance.post("/api/condominios", cad).then((res) => {
+      alert("Cadastro realizado com sucesso!");
       console.log(res.data);
     });
   }

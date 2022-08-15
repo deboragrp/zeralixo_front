@@ -26,7 +26,7 @@ function Sobrenos() {
       <Container>
         <div>
           <div className="justify-content-center pt-5">
-            <h2 class="pb-2 border-bottom fw-bold text-success">
+            <h2 className="pb-2 border-bottom fw-bold text-success">
               Porque ter o ZeraLixo no seu condomínio?
             </h2>
 
@@ -76,12 +76,12 @@ function Sobrenos() {
 
           <Row>
             <div className="container px-4 py-5" id="icon-grid">
-              <h2 class="pb-2 border-bottom fw-bold text-success">
+              <h2 className="pb-2 border-bottom fw-bold text-success">
                 Features do ZeraLixo
               </h2>
 
               <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-                <div class="col d-flex align-items-start">
+                <div className="col d-flex align-items-start">
                   <svg
                     className="bi text-muted flex-shrink-0 me-3"
                     width="1.75em"
@@ -124,7 +124,7 @@ function Sobrenos() {
                     <p>Sistema de troca de pontos por produtos na horta. </p>
                   </div>
                 </div>
-                <div class="col d-flex align-items-start">
+                <div className="col d-flex align-items-start">
                   <svg
                     className="bi text-muted flex-shrink-0 me-3"
                     width="1.75em"
@@ -140,7 +140,7 @@ function Sobrenos() {
                     </p>
                   </div>
                 </div>
-                <div class="col d-flex align-items-start">
+                <div className="col d-flex align-items-start">
                   <svg
                     className="bi text-muted flex-shrink-0 me-3"
                     width="1.75em"
@@ -149,11 +149,13 @@ function Sobrenos() {
                     <use href="#speedometer2"></use>
                   </svg>
                   <div>
-                    <h4 class="fw-bold mb-0 text-success">Horta Vertical</h4>
+                    <h4 className="fw-bold mb-0 text-success">
+                      Horta Vertical
+                    </h4>
                     <p>Horta vertical adaptável ao espaço. </p>
                   </div>
                 </div>
-                <div class="col d-flex align-items-start">
+                <div className="col d-flex align-items-start">
                   <svg
                     className="bi text-muted flex-shrink-0 me-3"
                     width="1.75em"
@@ -171,7 +173,7 @@ function Sobrenos() {
           </Row>
           <div>
             <div className="justify-content-center pt-5">
-              <h2 class="pb-2 border-bottom text-success fw-bold">
+              <h2 className="pb-2 border-bottom text-success fw-bold">
                 Team ZeraLixo
               </h2>
 

@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-
+import { axiosInstance } from "../config/axios";
 import Avatar from "../images/avatar.png";
 import CardGroup from "react-bootstrap/CardGroup";
 import ModalPerfil from "./ModalPerfil";
@@ -18,6 +18,33 @@ import Form from "react-bootstrap/Form";
 
 function Perfil() {
   const [modalShow, setModalShow] = useState(false);
+
+  const [task, setTask] = useState("");
+
+  const [itemsList, setItemsList] = useState([]);
+
+  function handleChangeInput(e) {
+    const inputTask = e.target.value;
+    setTask(inputTask);
+  }
+
+  function handleAddItemToList(e) {
+    e.preventDefault(); // <----- desabilita o refresh na pagina ao enviar um formulário
+
+    if (!task) {
+      return;
+    }
+
+    setItemsList([...itemsList, task]);
+    setTask("");
+  }
+
+  function deleteItem(index) {
+    let tmpArray = [itemsList];
+    tmpArray.splice(index, 1);
+
+    setItemsList(tmpArray);
+  }
 
   return (
     <div>
@@ -69,46 +96,6 @@ function Perfil() {
                 </>
               </Card.Body>
             </Card>
-
-            {/* Card Status */}
-            <Card
-              className="text-center text-white "
-              style={{ width: "18rem", background: " #54c48e" }}
-            >
-              <Card.Header className="fw-bold h4">Status</Card.Header>
-            </Card>
-            <ListGroup
-              className="mb-4"
-              as="ol"
-              numbered
-              style={{ width: "18rem" }}
-            >
-              <ListGroup.Item
-                as="li"
-                className="d-flex justify-content-between align-items-start "
-              >
-                <div className="ms-2 me-auto">
-                  <div className="fw-bold">Tarefas</div>
-                  Total de Tarefas
-                </div>
-                <Badge bg="primary" pill>
-                  2
-                </Badge>
-              </ListGroup.Item>
-
-              <ListGroup.Item
-                as="li"
-                className="d-flex justify-content-between align-items-start"
-              >
-                <div className="ms-2 me-auto">
-                  <div className="fw-bold">Finalizadas</div>
-                  Total de tarefas finalizadas
-                </div>
-                <Badge bg="primary" pill>
-                  0
-                </Badge>
-              </ListGroup.Item>
-            </ListGroup>
           </Col>
 
           {/* Card Task */}
@@ -125,45 +112,36 @@ function Perfil() {
                 className="p-3 justify-content-center  d-flex align-items-center"
                 controlId="exampleForm.ControlTextarea1"
               >
-                <Form.Control as="textarea" rows={2} />
+                <input
+                  className="input-group  form-control "
+                  type="text"
+                  name="title"
+                  onChange={handleChangeInput}
+                  value={task}
+                />
                 <Button
-                  className="btn btn-success btn-lg ms-2 fw-bold"
+                  className="btn btn-success btn-md ms-2 fw-bold"
                   type="submit"
+                  onClick={handleAddItemToList}
                 >
                   ADD
                 </Button>
               </Form.Group>
 
-              <ul className="list-group mb-5 mt-5 ">
-                <li className="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2 m-2 mt-3">
-                  <div className="d-flex align-items-center">
-                    <input
-                      className="form-check-input me-2"
-                      type="checkbox"
-                      value=""
-                      aria-label="..."
-                    />
-                    Limpar área das composteiras.
-                  </div>
-                  <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
-                    <i className="fas fa-times text-danger"></i>
-                  </a>
-                </li>
+              <ul className="list-group mb-5 mt-5">
+                {itemsList.map((item, index) => (
+                  <li
+                    className="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2 m-2 mt-3"
+                    key={index}
+                  >
+                    <input className="form-check-input " type="checkbox" />
+                    {item}
 
-                <li className="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2  m-2">
-                  <div className="d-flex align-items-center">
-                    <input
-                      className="form-check-input me-2"
-                      type="checkbox"
-                      value=""
-                      aria-label="..."
-                    />
-                    Limpar área da horta.
-                  </div>
-                  <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
-                    <i className="fas fa-times text-danger"></i>
-                  </a>
-                </li>
+                    <a title="Remove item" onClick={() => deleteItem(index)}>
+                      <i className="fas fa-times text-danger"></i>
+                    </a>
+                  </li>
+                ))}
               </ul>
             </Card>
 
@@ -198,7 +176,7 @@ function Perfil() {
                       </Card.Text>
                       <button
                         type="submit"
-                        class="btn btn-success"
+                        className="btn btn-success"
                         style={{ marginLeft: "32%" }}
                       >
                         Trocar
@@ -226,7 +204,7 @@ function Perfil() {
                       <br></br>
                       <button
                         type="submit"
-                        class="btn btn-success "
+                        className="btn btn-success "
                         style={{ marginLeft: "32%" }}
                       >
                         Trocar
@@ -255,7 +233,7 @@ function Perfil() {
                       </Card.Text>
                       <button
                         type="submit"
-                        class="btn btn-success"
+                        className="btn btn-success"
                         style={{ marginLeft: "32%" }}
                       >
                         Trocar

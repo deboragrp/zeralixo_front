@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { Navigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Modal from "react-bootstrap/Modal";
 import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
+import { UserContext } from "../App";
+import { axiosInstance } from "../config/axios";
 
 function ModalPerfil(props) {
-  const handleClose = () => setShow(false);
+  let navigate = useNavigate();
   const [setShow] = useState(false);
 
   return (
@@ -42,17 +46,19 @@ function ModalPerfil(props) {
               </Form.Group>
             </Row>
 
-            <Form.Group as={Col} controlId="formGridState">
-              <Form.Label>Função</Form.Label>
+            <Row>
+              <Form.Group as={Col} controlId="formGridState">
+                <Form.Label>Função</Form.Label>
 
-              <Form.Select defaultValue="Escolha...">
-                <option>Escolha...</option>
-                <option>Regar</option>
-                <option>Colher</option>
-                <option>Limpar</option>
-                <option>Plantar</option>
-              </Form.Select>
-            </Form.Group>
+                <Form.Select defaultValue="Escolha...">
+                  <option>Escolha...</option>
+                  <option>Regar</option>
+                  <option>Colher</option>
+                  <option>Limpar</option>
+                  <option>Plantar</option>
+                </Form.Select>
+              </Form.Group>
+            </Row>
 
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridPassword">
@@ -65,26 +71,13 @@ function ModalPerfil(props) {
                 <Form.Control type="number" placeholder="Número do seu apt" />
               </Form.Group>
             </Row>
-
-            <Form.Group as={Col} controlId="formGridPassword">
-              <Form.Label>Seu andar</Form.Label>
-              <Form.Control type="number" placeholder="Escolha seu andar" />
-            </Form.Group>
-
-            <Form.Group as={Col} controlId="formGridEmail">
-              <Form.Label>Nº do apt</Form.Label>
-              <Form.Control type="number" placeholder="Número do seu apt" />
-            </Form.Group>
           </Row>
         </Container>
       </Modal.Body>
 
       <Modal.Footer>
-        <Button variant="success" onClick={handleClose}>
+        <Button variant="success" onClick={props.onHide}>
           Salvar
-        </Button>
-        <Button variant="secondary" onClick={handleClose}>
-          Fechar
         </Button>
       </Modal.Footer>
     </Modal>
