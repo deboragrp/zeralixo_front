@@ -47,7 +47,9 @@ function Login_cad() {
     <div>
       <Navbar />
       <form className="form-signin w-25 mt-5  m-auto pt-5 ">
-        <h3 className=" mb-3 text-center">Login Condomínio</h3>
+        <h3 className=" mb-3 text-center">
+          Login Condomínio <i className="fa-solid fa-building me-2"></i>
+        </h3>
         <div className="mb-3">
           <label>E-mail </label>
           <input

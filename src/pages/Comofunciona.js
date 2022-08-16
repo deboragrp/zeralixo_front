@@ -16,8 +16,9 @@ function Comofunciona() {
       <Container>
         <Row>
           <h1 className=" text-center fw-bold mt-5 text-dark">
+            <i className="fa-solid fa-gears me-2"></i>
             Como Funciona o ZeraLixo
-            <i className="ms-2 fa-regular fa-circle-question"></i>
+            <i className="fa-solid fa-gears ms-2"></i>
           </h1>
           <Col lg={4} md={12} className="d-flex justify-content-center">
             {["Success"].map((variant) => (

@@ -17,7 +17,7 @@ function Contato() {
         <Col className="col-lg-8 ">
           <form className="form-signin w-75 mt-5  m-auto pt-5 pb-5">
             <h2 className=" mb-10 text-center fw-bold mb-5 text-success">
-              FALE CONOSCO
+              <i class="fa-solid fa-headphones-simple me-2"></i>FALE CONOSCO
             </h2>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridPassword">

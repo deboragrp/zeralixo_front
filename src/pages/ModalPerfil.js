@@ -48,6 +48,7 @@ function ModalPerfil(props) {
               <Form.Group as={Col}>
                 <Form.Label>Senha</Form.Label>
                 <Form.Control
+                  disabled
                   type="password"
                   value="62f6a3d1e0625fcd553ff580"
                   placeholder="ID do seu condomínio"
@@ -73,6 +74,7 @@ function ModalPerfil(props) {
               <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>Seu andar</Form.Label>
                 <Form.Control
+                  disabled
                   type="number"
                   value="10"
                   placeholder="Escolha seu andar"
@@ -82,6 +84,7 @@ function ModalPerfil(props) {
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Nº do apt</Form.Label>
                 <Form.Control
+                  disabled
                   type="number"
                   value="1002"
                   placeholder="Número do seu apt"
@@ -93,6 +96,9 @@ function ModalPerfil(props) {
       </Modal.Body>
 
       <Modal.Footer>
+        <Button variant="danger" onClick={props.onHide}>
+          Deletar conta
+        </Button>
         <Button variant="success" onClick={props.onHide}>
           Salvar
         </Button>

@@ -105,9 +105,9 @@ function Perfil() {
                 className="fw-bold h3 text-white"
                 style={{ background: " #54c48e" }}
               >
-                Tasks
+                <i className="fa-solid fa-list-check me-2"></i> Tarefas
               </Card.Header>
-              <h6 className="mb-3 mt-5 fw-bold">Adicione uma Task</h6>
+              <h6 className="mb-3 mt-5 fw-bold">Adicione uma Tarefa</h6>
               <Form.Group
                 className="p-3 justify-content-center  d-flex align-items-center"
                 controlId="exampleForm.ControlTextarea1"
@@ -153,6 +153,7 @@ function Perfil() {
                     className="fw-bold h3 text-white"
                     style={{ background: " #54c48e" }}
                   >
+                    <i className="fa-solid fa-arrow-right-arrow-left me-2"></i>{" "}
                     Troca de Pontos
                   </Card.Header>
                 </Card>

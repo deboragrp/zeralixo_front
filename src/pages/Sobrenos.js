@@ -61,6 +61,7 @@ function Sobrenos() {
                     className="ms-5 "
                     style={{
                       width: "14.06rem",
+
                       border: "6px solid white",
                       boxShadow:
                         "0 2px 5px 0 rgba(0, 48, 0, 0.5), 0 4px 15px 0 rgba(0, 48, 0, 0.5)",
@@ -77,7 +78,8 @@ function Sobrenos() {
           <Row>
             <div className="container px-4 py-5" id="icon-grid">
               <h2 className="pb-2 border-bottom fw-bold text-success">
-                Funcionalidades do ZeraLixo
+                Funcionalidades do ZeraLixo{" "}
+                <i className="fa-solid fa-gears"></i>
               </h2>
 
               <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
@@ -90,7 +92,10 @@ function Sobrenos() {
                     <use href=""></use>
                   </svg>
                   <div>
-                    <h4 className="fw-bold mb-0 text-success">Moradores</h4>
+                    <h4 className="fw-bold mb-0 text-success">
+                      <i className="fa-solid fa-building-user me-2"></i>
+                      Moradores
+                    </h4>
                     <p>Moradores do condomínio, colaboradores da horta.</p>
                   </div>
                 </div>
@@ -104,7 +109,7 @@ function Sobrenos() {
                   </svg>
                   <div>
                     <h4 className="fw-bold mb-0 text-success">
-                      Tasks da Horta
+                      <i className="fa-solid fa-list-check me-2"></i>Tarefas
                     </h4>
                     <p>Tarefas para se fazer na horta. </p>
                   </div>
@@ -119,7 +124,8 @@ function Sobrenos() {
                   </svg>
                   <div>
                     <h4 className="fw-bold mb-0 text-success">
-                      Sistema de Troca de pontos
+                      <i className="fa-solid fa-arrow-right-arrow-left me-2"></i>
+                      Troca de pontos
                     </h4>
                     <p>Sistema de troca de pontos por produtos na horta. </p>
                   </div>
@@ -133,7 +139,9 @@ function Sobrenos() {
                     <use href="#home"></use>
                   </svg>
                   <div>
-                    <h4 className="fw-bold mb-0 text-success">Condomínios</h4>
+                    <h4 className="fw-bold mb-0 text-success">
+                      <i className="fa-solid fa-building me-2"></i>Condomínios
+                    </h4>
                     <p>
                       Condominios que possuem o sistema do Zera Lixo em seu
                       ambiente.{" "}
@@ -150,7 +158,8 @@ function Sobrenos() {
                   </svg>
                   <div>
                     <h4 className="fw-bold mb-0 text-success">
-                      Horta Vertical
+                      <i className="fa-solid fa-seedling me-2"></i> Horta
+                      Vertical
                     </h4>
                     <p>Horta vertical adaptável ao espaço. </p>
                   </div>
@@ -164,7 +173,10 @@ function Sobrenos() {
                     <use href="#toggles2"></use>
                   </svg>
                   <div>
-                    <h4 className="fw-bold mb-0 text-success">Composteiras</h4>
+                    <h4 className="fw-bold mb-0 text-success">
+                      {" "}
+                      <i className="fa-solid fa-worm me-2"></i>Composteiras
+                    </h4>
                     <p>Composteiras com minhocário. </p>
                   </div>
                 </div>
@@ -174,7 +186,7 @@ function Sobrenos() {
           <div>
             <div className="justify-content-center pt-5">
               <h2 className="pb-2 border-bottom text-success fw-bold">
-                Equipe ZeraLixo
+                Equipe ZeraLixo <i class="fa-solid fa-people-group"></i>
               </h2>
 
               <Row className="mb-5 mt-5">
@@ -287,7 +299,7 @@ function Sobrenos() {
               <Row>
                 <Col className="d-flex justify-content-center">
                   <Card
-                    className="ms-2 mb-3"
+                    className="ms-2 mb-5"
                     style={{
                       border: "5px  solid white ",
                       width: "15rem",
@@ -323,7 +335,7 @@ function Sobrenos() {
 
                 <Col className="d-flex justify-content-center">
                   <Card
-                    className="ms-2 mb-3"
+                    className="ms-2 mb-5"
                     style={{
                       border: "5px  solid white ",
                       width: "15rem",
