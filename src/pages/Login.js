@@ -33,7 +33,7 @@ function Login() {
     } else {
       axiosInstance.post("/api/auth/login", login).then((res) => {
         console.log(res);
-        if (res.status == 200) {
+        if (res.status === 200) {
           localStorage.setItem("token", res.data.token);
           setToken(res.data.token);
           navigate("/perfil");

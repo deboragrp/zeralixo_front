@@ -32,7 +32,7 @@ function Login_cad() {
     } else {
       axiosInstance.post("/api/auth/logincond", login).then((res) => {
         console.log(res);
-        if (res.status == 200) {
+        if (res.status === 200) {
           localStorage.setItem("token", res.data.token);
           setToken(res.data.token);
           navigate("/perfilcad");

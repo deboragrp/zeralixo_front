@@ -5,15 +5,14 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { axiosInstance } from "../config/axios";
+
 import Avatar from "../images/avatar.png";
 import CardGroup from "react-bootstrap/CardGroup";
 import ModalPerfil from "./ModalPerfil";
 import tomate from "../images/tomate.jpg";
 import coentro from "../images/coentro.jpg";
 import cenoura from "../images/cenoura.png";
-import Badge from "react-bootstrap/Badge";
-import ListGroup from "react-bootstrap/ListGroup";
+
 import Form from "react-bootstrap/Form";
 
 function Perfil() {

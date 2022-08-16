@@ -1,19 +1,12 @@
-import React, { useState, useEffect, useContext } from "react";
-import { Navigate } from "react-router";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Modal from "react-bootstrap/Modal";
 import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
-import { UserContext } from "../App";
-import { axiosInstance } from "../config/axios";
 
 function ModalPerfil(props) {
-  let navigate = useNavigate();
-  const [setShow] = useState(false);
-
   return (
     <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
       <Modal.Header closeButton>

@@ -3,7 +3,6 @@ import Navbar from "../components/navbar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Deboraimg from "../images/deboraimg.png";
 import Mayara from "../images/mayaraimg.png";
@@ -15,11 +14,8 @@ import Img3 from "../images/img3.png";
 import Img4 from "../images/img4.png";
 import Linkedin from "../images/linkedin.png";
 import Github from "../images/github.png";
-import Aboutus from "../images/aboutus.png";
-import { useNavigate } from "react-router-dom";
 
 function Sobrenos() {
-  let navigate = useNavigate();
   return (
     <div>
       <Navbar />
@@ -209,6 +205,7 @@ function Sobrenos() {
                           style={{
                             width: "40px",
                           }}
+                          alt=""
                         />
                       </a>
                       <a href="https://www.linkedin.com/in/d%C3%A9bora-pinto-8a77a420b/">
@@ -217,6 +214,7 @@ function Sobrenos() {
                           style={{
                             width: "40px",
                           }}
+                          alt=""
                         />
                       </a>
                     </Card.Body>
@@ -245,6 +243,7 @@ function Sobrenos() {
                           style={{
                             width: "40px",
                           }}
+                          alt=""
                         />
                       </a>
                       <a href="https://www.linkedin.com/in/mayara-ribeiro-/">
@@ -253,6 +252,7 @@ function Sobrenos() {
                           style={{
                             width: "40px",
                           }}
+                          alt=""
                         />
                       </a>
                     </Card.Body>
@@ -281,6 +281,7 @@ function Sobrenos() {
                           style={{
                             width: "40px",
                           }}
+                          alt=""
                         />
                       </a>
                       <a href="https://www.linkedin.com/in/hugo-albuqq/">
@@ -289,6 +290,7 @@ function Sobrenos() {
                           style={{
                             width: "40px",
                           }}
+                          alt=""
                         />
                       </a>
                     </Card.Body>
@@ -319,10 +321,12 @@ function Sobrenos() {
                           style={{
                             width: "40px",
                           }}
+                          alt=""
                         />
                       </a>
                       <a href="https://www.linkedin.com/in/giully-domingos-bb1059247/">
                         <img
+                          alt=""
                           src={Linkedin}
                           style={{
                             width: "40px",
@@ -348,6 +352,7 @@ function Sobrenos() {
                       <Card.Title>Deysiane Vidal</Card.Title>
                       <a className="me-2" href="https://github.com/Deysividal">
                         <img
+                          alt=""
                           src={Github}
                           style={{
                             width: "40px",
@@ -356,6 +361,7 @@ function Sobrenos() {
                       </a>
                       <a href="https://www.linkedin.com/in/deysiane-vidal-34595a196/">
                         <img
+                          alt=""
                           src={Linkedin}
                           style={{
                             width: "40px",

@@ -6,7 +6,6 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Image from "../images/condimage.png";
 import { useNavigate } from "react-router-dom";
-import axios from "../config/axios";
 
 function Home() {
   let navigate = useNavigate();
@@ -46,7 +45,7 @@ function Home() {
           </Col>
           <Col className="col-md-6 ">
             <div className=" mt-4 pt-4">
-              <img className="img-fluid" src={Image} />
+              <img className="img-fluid" src={Image} alt="" />
             </div>
           </Col>
         </Row>

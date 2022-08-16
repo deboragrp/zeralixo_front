@@ -12,7 +12,7 @@ function Contato() {
       <Navbar />
       <Row>
         <Col className="col-lg-4 col-md-12 col-sm-12 col-12">
-          <img className="img-fluid ms-5 " src={Character} />
+          <img className="img-fluid ms-5 " src={Character} alt="" />
         </Col>
         <Col className="col-lg-8 ">
           <form className="form-signin w-75 mt-5  m-auto pt-5 pb-5">
